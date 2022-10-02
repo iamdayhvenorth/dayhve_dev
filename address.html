@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>HTML and CSS for Complete Beginners Homework: Address</title>
+
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+		rel="stylesheet" />
+
+	<style>
+		/* Write your CSS here */
+		h1 {
+			font-weight: 900;
+			font-size: 28px;
+			font-family: poppins;
+		}
+
+		.learn {
+			background-color: lightgray;
+			display: flex;
+			justify-content: center;
+		}
+
+		.about-info p {
+			font-family: poppins;
+			font-weight: 500;
+			color: rgba(0, 0, 0, .6);
+
+		}
+
+		.about-info {
+			border: 1px;
+			text-align: start;
+			padding: 45px 40px;
+			width: 250px;
+			border-radius: 8px;
+			background-color: white;
+		}
+
+		.phone-info h3,
+		.email-info h3 {
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: bold;
+			font-family: poppins;
+			color: rgba(0, 0, 0, .6);
+		}
+
+		#email-info {
+			margin-top: 25px;
+
+		}
+
+		div h3 {
+			margin-bottom: 0;
+		}
+
+		.email-info p,
+		.phone-info p {
+			margin-top: 0;
+			color: red;
+		}
+
+		a {
+			text-decoration: none;
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="learn">
+		<div>
+			<div class="about-info">
+				<img src="images/address/envelopes-bulk.svg" alt="envelopes-bulk">
+				<h1>Let's get in touch</h1>
+				<p>9 Augusta Street <br>
+					Fair Lawn, NJ 07410
+				</p>
+				<hr>
+				<div class="email-info" id="email-info">
+					<h3>email</h3>
+					<p><a href="mailto:daveenot@gmail.com">daveenot@gmail.com</a></p>
+
+				</div>
+				<div class="phone-info">
+					<h3>phone</h3>
+					<p> <a href="tel+1-202-555-0125">+1-202-555-0125</a></p>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<section class="preview" data-content="Address">
+		<img width="444px" src="images/reference/address.png" alt="Address" />
+
+		</div>
+	</section>
+</body>
+
+</html>

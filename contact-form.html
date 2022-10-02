@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>HTML and CSS for Complete Beginners Homework: Contact form</title>
+
+	<!-- This CSS and font is purely for presentational purposes. -->
+	<link rel="stylesheet" href="css/presentation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/contact-form.css">
+
+</head>
+
+<body>
+	<section class="learn">
+		<form action="">
+			<img src="images/contact-form/envelope.svg" alt="contact image">
+			<h1>Let's get in touch</h1>
+			<div class="email-container">
+				<label for="name-login">NAME
+					<input type="text" name="name-login" id="name-login" value="David Onigbinde">
+				</label>
+			</div>
+			<div>
+				<label for="email-login">EMAIL ADDRESS
+					<input type="email" name="email-login" id="email-login" value="daveenot@gmail.com" disabled>
+				</label>
+			</div>
+			<div class="department-container">
+				<label for="department-info">DEPARTMENT
+					<select name="department-info" id="department-info">
+						<option value="Reception">select a department</option>
+						<option value="bar">department 2</option>
+					</select>
+				</label>
+			</div>
+			<div class="message-container">
+				<label for="message">MESSAGE
+					<textarea name="message" id="message" cols="30" rows="10">
+
+					</textarea>
+				</label>
+			</div>
+			<button>Send Message</button>
+		</form>
+	</section>
+
+	<section class="preview" data-content="Contact form">
+		<img width="560px" src="images/reference/contact-form.png" alt="Contact form" />
+	</section>
+</body>
+
+</html>
