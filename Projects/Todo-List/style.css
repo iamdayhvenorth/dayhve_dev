@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+
+body {
+    background-color: #192836;
+
+}
+
+.todo-container {
+    margin: 40px auto;
+    width: 75%;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.todo-items ul {
+    /* border: 1px solid #555; */
+    list-style: none;
+
+}
+
+.todo-items ul li {
+    padding: 20px;
+    border-bottom: 1px solid #555;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+
+.todo-items ul li:last-child {
+    border-bottom: none;
+}
+
+.todo-items ul li:nth-child(odd) {
+    background-color: aqua;
+}
+
+.todo-items ul li:nth-child(even) {
+    background-color: hotpink;
+}
+
+.todo-items ul li:hover {
+    background-color: #192836;
+    cursor: pointer;
+    color: #fff;
+}
+
+input {
+    width: 65%;
+    height: 40px;
+    padding: 20px;
+    outline: none;
+    background-color: #ccc;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    text-align: center;
+    height: 40px;
+    background-color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+span {
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+
+
+}
+
+span:hover {
+    background-color: red;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0;
+}

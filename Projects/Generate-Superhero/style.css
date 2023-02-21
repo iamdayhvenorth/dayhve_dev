@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+    padding: 1rem;
+}
+
+.input {
+    width: 80%;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ccc;
+    font-size: 16px;
+    border: none;
+    outline: none;
+
+}
+
+.btn {
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    width: 15%;
+    cursor: pointer;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 2px solid pink;
+    padding-top: 1.3rem;
+}
+
+.card {
+    width: 23%;
+    box-shadow: 0 0 4px 3px #ccc;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: left;
+    background-color: #fff;
+}
+
+.powerstats span {
+    color: red;
+}
+
+
+
+.name {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.powerstats,
+.gender {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 1em 0;
+    font-size: 1.2rem;
+}
+
+.images {
+    width: 100%;
+}

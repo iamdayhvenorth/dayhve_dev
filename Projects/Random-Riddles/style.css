@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(joker.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 20px;
+    width: 75%;
+    max-width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+.heading {
+    font-size: 35px;
+    color: darkcyan;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, .6);
+    letter-spacing: 2px;
+}
+
+h2.riddle-ques {
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+}
+
+p.answer {
+    font-size: 24px;
+    color: red;
+    font-weight: 700;
+}
+
+.btn {
+    border: none;
+    width: 70%;
+    padding: 8px 10px;
+    background: darkgreen;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 16px;
+    color: aliceblue;
+    margin: 6px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+    background: rgb(0, 100, 0, .8);
+}
