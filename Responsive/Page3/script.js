@@ -26,17 +26,12 @@ closeBtn.addEventListener("click", () => {
     navEl.style.transition = "transition: all 4s ease-in-out";
 })
 
-// listItems.forEach((item) => {
-//     item.addEventListener("click", () => {
-//         if (body < 1000) {
-//             overlay.style.display = "none"
-//         } else {
-//             overlay.style.display = "block"
-//         }
+listItems.forEach((item) => {
+    item.addEventListener("click", () => {
 
-
-//     })
-// })
+navEl.style.display= "none"
+    })
+})
 
 
 
