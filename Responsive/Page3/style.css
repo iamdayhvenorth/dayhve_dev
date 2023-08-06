@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+/* 
+!header style on desktop screen
+*/
+
+header {
+    display: none;
+    z-index: 20;
+    background: #f44336;
+    color: #fff;
+    padding: 16px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header span {
+    margin-right: 16px;
+    padding: 8px 16px;
+    font-size: 24px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+header span:hover {
+    background: #ccc;
+    color: #000;
+}
+
+header h3 {
+    display: inline;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* 
+! styles for nav side bar
+*/
+.active {
+    display: block;
+    position: fixed;
+    background: #f44336;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    overflow-y: auto;
+    z-index: 50;
+    height: 100%;
+}
+
+.nav {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 8px 16px;
+    /* display: none; */
+}
+
+/* 
+! close button
+*/
+
+.active span.close {
+    display: none;
+    width: 100%;
+    padding: 8px 16px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+    transition: background 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
+span.close:hover {
+    background: #f1f1f1;
+    color: #000;
+}
+
+
+
+.nav .comp-nm {
+    padding: 0 16px;
+}
+
+.nav .comp-nm h3 {
+    padding: 90px 0;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.nav .lists-bx {
+    list-style: none;
+    /* padding: 0 16px; */
+}
+
+.lists-bx li {
+    width: 100%;
+    display: block;
+}
+
+.lists-bx li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    /* transition: background 0.2s ease-in-out, color 0.2s ease-in-out; */
+}
+
+.lists-bx li a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* 
+! main content styles
+*/
+
+main {
+    margin: 0 40px 0 340px;
+    transition: margin 0.5s ease-in-out;
+}
+
+/* 
+! Header styles
+*/
+main .header {
+    margin-top: 80px;
+    padding: 0 16px;
+    line-height: 1.5;
+}
+
+main .header h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #f44336;
+}
+
+hr.border-bold {
+    color: #f44336;
+    margin: 20px 0;
+    border: 5px solid #f44336;
+    width: 50px;
+    font-weight: 600;
+    border-radius: 4px;
+    box-sizing: content-box;
+}
+
+/* 
+! image grid styles
+*/
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+    column-gap: 18px;
+}
+
+.grid-box .left-grid,
+.grid-box .right-grid {
+    width: 100%;
+    display: block;
+}
+
+.left-grid img,
+.right-grid img {
+    width: 100%;
+    margin: 16px 0 -6px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.left-grid img:hover,
+.right-grid img:hover {
+
+    opacity: 1;
+}
+
+/* 
+! Services, Designers, packages  styles
+*/
+
+.service,
+.designers,
+.packages,
+.contacts {
+    margin-top: 75px;
+    padding: 0 16px;
+}
+
+.service p,
+.designers p,
+.packages p,
+.contacts p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.designers p.bold-txt {
+    font-weight: 700;
+}
+
+/*
+ ! Team grid styles
+*/
+
+.team-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 17px;
+    column-gap: 18px;
+}
+
+.team-grid div.item {
+    width: 100%;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 100%;
+    filter: grayscale(0.6);
+}
+
+.item .team-info {
+    padding: 0 16px;
+}
+
+.team-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.team-info .pos {
+    opacity: 0.6;
+    font-size: 16px;
+    margin: 16px 0;
+    line-height: 1.5;
+}
+
+.team-info p.text {
+    margin: 16px 0;
+    line-height: 1.5;
+}
+
+/* 
+! image fullscreen styles
+*/
+
+.img-full {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    z-index: 100;
+    padding: 64px 0;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    overflow: hidden;
+
+}
+
+.img-full span {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 36px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    font-family: "poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.img-full span:hover {
+    background: #ccc;
+    color: #000;
+}
+
+/* 
+! packages plan
+*/
+
+.packages .pckg-plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+
+.pckg-plans ul.plan {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.plan li {
+    border-bottom: 1px solid #ddd;
+    background: #f1f1f1;
+    padding: 16px;
+    line-height: 1.5;
+}
+
+.plan li:last-child {
+    border-bottom: none;
+}
+
+li.basic,
+li.pro {
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 32px 16px;
+    background: #616161;
+    color: #fff;
+}
+
+li.pro {
+    background: #f44336;
+}
+
+li.price h2 {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+li.price span {
+    opacity: .60;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+li .btn {
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    line-height: 1.5;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+li .btn.pro {
+    background: #f44336;
+    color: #fff;
+}
+
+li .btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* 
+! Contact  form
+*/
+
+form {
+    width: 100%;
+    display: block;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+}
+
+form label span {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+form label input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #cccccc;
+}
+
+form button {
+    width: 100%;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    background: #f44336;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+form button:hover {
+    background: #cccccc;
+    color: #000;
+}
+
+footer {
+    margin: 75px 0 0 0;
+    padding: 32px 58px 32px 16px;
+    background: #f1f1f1;
+    width: 100%;
+}
+
+footer p {
+    margin: 16px 0;
+    display: flex;
+    justify-content: end;
+}
+
+/*
+ ! styles for tab screen
+*/
+
+@media (max-width:992px) {
+
+    /* 
+    !header
+    */
+    header {
+        display: block;
+    }
+
+
+    /* 
+    !side nav bar
+    */
+    .active {
+        display: none;
+        height: 100%;
+        /* transition: height 2s ease-in-out; */
+
+    }
+
+    .active span.close {
+        display: block;
+    }
+
+
+
+
+    /* 
+    ! Main content
+    */
+
+    main {
+        margin: unset;
+    }
+
+    /* 
+    ! active nav bar
+    */
+
+
+
+    .img-full img {
+        width: 80%;
+    }
+}
+
+
+/*
+ ! styles for mobile screen
+*/
+
+@media (max-width:600px) {
+
+    /* 
+    !styles for image grid
+    */
+
+    .grid-box {
+        grid-template-columns: 1fr;
+    }
+
+
+    /*
+    ! Team grid styles
+    */
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* 
+    ! packages plan
+    */
+
+    .packages .pckg-plans {
+        grid-template-columns: 1fr;
+    }
+
+
+    .img-full img {
+        width: 96%;
+    }
+
+}
